@@ -1,0 +1,12 @@
+[Metadata]
+artist=<{$broadcast.name}>
+album=<{$broadcast.current}>
+category=<{$broadcast.genre}>
+language=<{$xoops_langcode}>
+year=<{$broadcast.year}>
+keywords=<{$xoops_meta_keywords}>
+description=<{$xoops_meta_description}>
+[Entries]
+<{foreach from=$broadcast.streams item=stream}>
+entry<{$stream.index}>=<{$stream.uri}>
+<{/foreach}>

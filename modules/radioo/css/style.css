@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.radioo, #radioo, .radioo-block, #radioo-block
+{
+	font-size: 		1.1392em;
+	font-family: 	'DiavloBook',Verdana, Arial, sans-serif;
+	line-height: 	1.6;
+	text-shadow:	2px 2px 4px rgb(12, 13, 29);
+}

@@ -1,0 +1,8 @@
+# Broadcaster Name: <{$broadcast.name}>
+# Broadcaster Current Track: <{$broadcast.current}>
+# Broadcaster Date: <{$broadcast.date}>
+
+<{foreach from=$broadcast.streams item=stream}>
+# SHA1: <{$stream.sha1}>
+<{$stream.uri}>
+<{/foreach}>

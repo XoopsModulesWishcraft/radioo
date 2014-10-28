@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DiavloMedium';
+    src: url('diavlo_medium_ii_37.eot');
+    src: url('diavlo_medium_ii_37.eot') format('embedded-opentype'),
+         url('diavlo_medium_ii_37.woff2') format('woff2'),
+         url('diavlo_medium_ii_37.woff') format('woff'),
+         url('diavlo_medium_ii_37.ttf') format('truetype'),
+         url('diavlo_medium_ii_37.svg#DiavloMedium') format('svg');
+}

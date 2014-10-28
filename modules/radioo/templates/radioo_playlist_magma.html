@@ -1,0 +1,13 @@
+<!-- Broadcaster Name: <{$broadcast.name}> -->
+<!-- Broadcaster Current Track: <{$broadcast.current}> -->
+<!-- Broadcaster Date: <{$broadcast.date}> -->
+<center>
+<{foreach from=$broadcast.streams item=stream}>
+	<a href="magnet:?xt=urn:sha1:<{$stream.sha1}><{if $stream.encode.filename}>&dn=<{$stream.encode.filename}><{/if}>&as=<{$stream.encode.uri}>" id='magnetic-stream' class='magnetic-stream'>
+		<font style="font-weight: bold;" id="broadcaster-name" class="broadcaster-name"><{$broadcast.name}></font>
+		&nbsp;-&nbsp;
+		<font style="font-weight: none; font-decorate: italics;" id="broadcaster-current" class="broadcaster-current"><{$broadcast.current}></font>
+	</a>
+	<br/>
+<{/foreach}>
+</center>

@@ -1,0 +1,12 @@
+<asx version="3.0">
+  <title><{$broadcast.name}></title>
+  <{foreach from=$broadcast.streams item=stream}>
+  <entry>
+    <title><{$stream.name}></title>
+    <ref href="<{$stream.uri}>" />
+    <author><{$xoops_meta_author}></author>
+    <copyright><{$xoops_meta_copyright}></copyright>
+    <generator><{$xoops_dirname}></generator>
+  </entry>
+<{/foreach}>
+</asx>

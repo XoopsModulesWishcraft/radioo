@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	RewriteRule ^(*.?)/(*.?).(pls|m3u|asx|xspf|b4s|rdf|kapsule|kpl|magma|ram|smil)$ players.php?authkey=$1&key=$2&format=$3
+	RewriteRule ^(*.?).(pls|m3u|asx|xspf|b4s|rdf|kapsule|kpl|magma|ram|smil)$ players.php?key=$1&format=$2
+	
+</IfModule>
