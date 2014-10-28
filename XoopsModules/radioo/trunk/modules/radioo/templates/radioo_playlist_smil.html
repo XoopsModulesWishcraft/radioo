@@ -1,0 +1,9 @@
+<smil>
+	<body>
+		<seq>
+<{foreach from=$broadcast.streams item=stream}>
+			<audio src="<{$stream.uri}>" />
+<{/foreach}>
+		</seq>
+	</body>
+</smil>

@@ -1,0 +1,6 @@
+[playlist]<{foreach from=$broadcast.streams item=stream}>
+File<{$stream.index}>: <{$stream.uri}>
+Title<{$stream.index}>: <{$stream.current}>
+Length<{$stream.index}>: -1
+<{/foreach}>NumberOfEntries: <{$broadcast.howmany}>
+Version: 2

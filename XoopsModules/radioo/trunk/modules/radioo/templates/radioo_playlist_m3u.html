@@ -1,0 +1,4 @@
+#EXTM3U<{foreach from=$broadcast.streams item=stream}>
+#EXTINF:-1,<{$stream.name}>
+<{$stream.uri}>
+<{/foreach}>

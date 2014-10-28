@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<kapsule version="1.0">
+	<metakapsule>
+		<publisher><{$xoops_sitename}></publisher>
+		<creator><{$xoops_meta_author}></creator>
+		<title><{$broadcast.name}></title>
+		<description><{$xoops_meta_description}></description>
+		<keywords><{$xoops_meta_keywords}></keywords>
+		<language><{$xoops_langcode}></language>
+		<audio>
+			<album><{$broadcast.current}></album>
+		</audio>
+		<stylesheet>Kapsule.xsl</stylesheet>
+		<date><{$broadcast.date}></date>
+		<thumbnail><{$xoops_url}>/images/logo.png</thumbnail>
+	</metakapsule>
+  
+<{foreach from=$broadcast.streams item=stream}>
+	<item>
+		<identifier>urn:<{$stream.urn.key}>:<{$stream.urn.serial}></identifier>
+		<identifier><{$stream.uri}></identifier><{if $stream.filename}>
+		<filename><{$stream.filename}></filename><{/if}>
+		<audio>
+			<creator><{$xoops_sitename}></creator>
+			<album><{$broadcast.name}></album>
+			<title><{$broadcast.current}></title>
+			<rights>
+				<identifier><{$xoops_url}>/modules/radioo/</identifier>
+			</rights>
+		 </audio>
+	</item>
+		
+<{/foreach}>
+</kapsule>

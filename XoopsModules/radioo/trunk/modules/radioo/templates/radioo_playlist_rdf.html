@@ -1,0 +1,19 @@
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<{foreach from=$broadcast.streams item=stream}>
+   <Work rdf:about="urn:sha1:<{$stream.sha1}>">
+      <dc:date><{$broadcast.year}></dc:date>
+      <dc:format><{$broadcast.format}></dc:format>
+      <dc:identifier><{$stream.uri}></dc:identifier>
+      <dc:rights><Agent><dc:title><{$xoops_site_name}></dc:title></Agent></dc:rights>
+      <dc:title><{$broadcast.name}></dc:title>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/Sound" />
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/1.0/" />
+   </Work>
+		
+<{/foreach}>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/1.0/"></License>
+   <License rdf:about="http://web.labs.coop/public/legal/general-software-license/10,3.html"></License>
+</rdf:RDF>
